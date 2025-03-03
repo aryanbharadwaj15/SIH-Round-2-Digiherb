@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Herbal Garden</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content"></div>
+        <video autoplay muted loop class="background-video">
+            <source
+                src="https://media.istockphoto.com/id/2152270847/video/neatly-crafted-raised-garden-beds-with-a-variety-of-growing-vegetables.mp4?s=mp4-640x640-is&k=20&c=ZsNTxgJ9cngiUefyDPXGwFtNZf9Lk8u45lygKnpKZsA="
+                type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- Hamburger Menu -->
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="site-name">DigiHerb</div>
+        <section class="search-section">
+            <div class="search-bar-container">
+                <input type="text" id="search-input" placeholder="Search for a plant...">
+                <div id="suggestions" class="suggestions"></div>
+            </div>
+        </section>
+
+        <!-- Info box (initially hidden) -->
+        <div id="plant-info-box" class="plant-info-box hidden">
+            <div class="back-btn" id="back-btn">Close</i></div>
+            <div class="plant-info-content">
+                <img id="plant-image" src="" alt="Plant Image">
+                <h1 id="plant-name" style="position: relative;
+                top: -290px;
+                
+                font-size: 44px;"></h1>
+                <p style="top: -280px;position: relative;"><strong>Where it's grown:</strong> <span
+                        id="plant-location"></span></p>
+                <p style="top: -260px;position: relative;"><strong>Cures for:</strong> <span id="plant-diseases"></span>
+                </p>
+                <p style="top: -240px;position: relative;"><strong>Features:</strong> <span id="plant-features"></span>
+                </p>
+                <p style="top: -97px;position: relative;"><strong>Additional-Information:</strong><Span id="plant-additional-info"></Span></p>
+            </div>
+        </div>
+
+        <nav class="side-menu" id="side-menu">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="explore-more.html"><i class="fas fa-binoculars"></i> Explore</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="feedback.html"><i class="fas fa-envelope"></i> Send Feedback</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+            </ul>
+        </nav>
+
+        <!-- Login Button -->
+        <button class="login-btn" id="login-btn">Log In</button>
+
+        <button id="about-btn" class="about-btn">About</button>
+        <button id="quizzes-btn" class="quizzes-btn">Quizzes</button>
+        <!-- Login Form -->
+        <div class="login-form" id="login-form">
+            <div class="form-container">
+                <button class="close-btn" id="close-login-btn">&times;</button>
+                <h2>Log In</h2>
+                <form>
+                    <input type="text" placeholder="Username" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit" class="submit-btn">Log In</button>
+                    <button type="button" class="forgot-password">Forgot Password?</button>
+                </form>
+                <div class="signup-container">
+                    <p>Don't have an account?</p>
+                    <button class="signup-btn" id="signup-btn">Sign Up</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Signup Form -->
+        <div class="signup-form" id="signup-form">
+            <div class="form-container">
+                <button class="close-btn" id="close-signup-btn">&times;</button>
+                <h2>Sign Up</h2>
+                <form>
+                    <input type="text" placeholder="Mobile number or email" required>
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="text" placeholder="Username" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit" class="submit-btn">Sign Up</button>
+                </form>
+                <div class="social-login">
+                    <p>Or sign up with:</p>
+                    <button><i class="fab fa-google"></i> Google</button>
+                    <button><i class="fab fa-facebook"></i> Facebook</button>
+                    <button><i class="fab fa-apple"></i> Apple ID</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="overlay">
+            <h1>Virtual Herbal Garden</h1>
+            <p>Explore the wonders of medicinal plants</p>
+        </div>
+    </main>
+
+    <!-- Include your existing login and signup forms -->
+    <!-- Include your existing JavaScript file -->
+
+    <!-- Second Page Content -->
+    <section class="second-page-section">
+        <video autoplay muted loop>
+            <source
+                src="https://media.istockphoto.com/id/1256377535/video/young-woman-gardening-at-raised-planter-box.mp4?s=mp4-640x640-is&k=20&c=OzQ8oeBswKSnQoMdikEjqpZvJodnrBAQfij6Rsu4pd8="
+                type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="container">
+            <button class="button" onclick="visitVirtualGarden()">Visit Virtual Garden</button>
+        </div>
+    </section>
+
+    <script>
+        function visitVirtualGarden() {
+            window.location.href = 'virtual-garden.html'; // Replace with the actual URL of your virtual garden page
+        }
+    </script>
+
+    <!-- Third Page Section -->
+    <section class="page-section third-page-section" id="third-page">
+        <div class="plant-container">
+            <!-- Row 1 -->
+            <div class="plant-row">
+                <!-- Plant 1 -->
+                <div class="plant-box">
+                    <img src="https://cdn.shopify.com/s/files/1/0047/9730/0847/files/51iIZ1n-lJL_large.jpg?v=1598874255"
+                        alt="Plant 1">
+                    <div class="plant-info">
+                        <h3>Tulsi</h3>
+                        <p><strong>Cures:</strong> Malaria, Headache, Cholera </p>
+                        <p><strong>Where Grown:</strong> Region X</p>
+                    </div>
+                </div>
+                <!-- Plant 2 -->
+                <div class="plant-box">
+                    <img src="https://cdn.shopify.com/s/files/1/0047/9730/0847/files/3-s2.0-B9780128139998000112-f11-01-9780128139998_large.jpg?v=1598874356"
+                        alt="Plant 2">
+                    <div class="plant-info">
+                        <h3>Aloe Vera</h3>
+                        <p><strong>Cures:</strong> Contipation, Ulcer, Burns</p>
+                        <p><strong>Where Grown:</strong> Region Y</p>
+                    </div>
+                </div>
+                <!-- Plant 3 -->
+                <div class="plant-box">
+                    <img src="https://cdn.shopify.com/s/files/1/0047/9730/0847/files/centella-asiatica_large.jpg?v=1598874509"
+                        alt="Plant 3">
+                    <div class="plant-info">
+                        <h3>Gotu Kola</h3>
+                        <p><strong>Cures:</strong> Ulcers, Skin problems, Fragulity</p>
+                        <p><strong>Where Grown:</strong> Region Z</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Row 2 -->
+            <div class="plant-row">
+                <!-- Plant 4 -->
+                <div class="plant-box">
+                    <img src="https://cdn.shopify.com/s/files/1/0047/9730/0847/files/IMG_2600-2-1_large.jpg?v=1598874804"
+                        alt="Plant 4">
+                    <div class="plant-info">
+                        <h3>Basil</h3>
+                        <p><strong>Cures:</strong> Gas, Cuts, Scraps </p>
+                        <p><strong>Where Grown:</strong> Region A</p>
+                    </div>
+                </div>
+                <!-- Plant 5 -->
+                <div class="plant-box">
+                    <img src="https://cdn.shopify.com/s/files/1/0047/9730/0847/files/nurserylive-thime_large.jpg?v=1598874920"
+                        alt="Plant 5">
+                    <div class="plant-info">
+                        <h3>Thyme</h3>
+                        <p><strong>Cures:</strong> Congestion, Gas, Cough</p>
+                        <p><strong>Where Grown:</strong> Region B</p>
+                    </div>
+                </div>
+                <!-- Plant 6 -->
+                <div class="plant-box">
+                    <img src="https://cdn.shopify.com/s/files/1/0047/9730/0847/files/fenugreek-greenforage_480x480.jpg?v=1601033506"
+                        alt="Plant 6">
+                    <div class="plant-info">
+                        <h3>Fenugreek, Methi</h3>
+                        <p><strong>Cures:</strong> Cancer, Low BP, Ulcers</p>
+                        <p><strong>Where Grown:</strong> Region C</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="explore-more-button" onclick="window.location.href='explore-more.html'">Explore More</button>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="search.js"></script>
+
+</body>
+
+</html>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section about-us">
+            <h3>About Us</h3>
+            <p>We are dedicated to delivering exceptional services and products related to gardening and greenery. Learn
+                more about our mission, vision, and team.</p>
+        </div>
+
+        <div class="footer-section quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="explore-more.html">Explore</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section contact">
+            <h3>Contact</h3>
+            <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+            <p>Phone: +91 12345 67890</p>
+            <p>Address: 1234 Main Street, Hometown, India</p>
+        </div>
+
+        <div class="footer-section newsletter">
+            <h3>Newsletter Signup</h3>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <div class="footer-section social-media">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><img
+                        src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-256.png"
+                        alt="Facebook"></a>
+                <a href="#"><img
+                        src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Twitter_colored_svg-256.png"
+                        alt="Twitter"></a>
+                <a href="#"><img
+                        src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-256.png"
+                        alt="Instagram"></a>
+                <a href="#"><img
+                        src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Linkedin_unofficial_colored_svg-256.png"
+                        alt="LinkedIn"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 DigiHerb. All rights reserved.</p>
+    </div>
+</footer>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Instructions</title>
+    <link rel="stylesheet" href="quiz_instructions.css"> <!-- Linking to the external CSS -->
+</head>
+<body>
+    <div class="container">
+        <div class="instructions-box">
+            <h1>Quiz Instructions</h1>
+            <p>Please read the instructions carefully before starting the quiz:</p>
+            <ul>
+                <li>The quiz consists of 10 questions related to plant identification.</li>
+                <li>You have 2 minutes to complete the quiz.</li>
+                <li>For each correct answer, 1 point will be awarded.</li>
+                <li>Skipping a question will not affect your score but no points will be given.</li>
+                <li>Max score: 10 points.</li>
+                <li>If you get an answer wrong, 0 points will be added to your score.</li>
+                <li>Once the time is over or all questions are answered, you will see a detailed score report.</li>
+            </ul>
+            <button class="continue-btn" onclick="startQuiz()">Continue</button>
+        </div>
+    </div>
+
+    <script>
+        function startQuiz() {
+            window.location.href = "plant_quiz.html"; // Redirect to quiz page
+        }
+    </script>
+</body>
+</html>
